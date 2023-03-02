@@ -21,6 +21,7 @@ body {
   min-width: 100%;
   min-height: 100svh;
   overflow: hidden;
+  transition: all 300ms ease-in-out;
 }
 
 .header {
@@ -109,8 +110,12 @@ button {
 
 #hamburger:hover {
     color: #191825;
-
 }
+
+.hide {
+    transform: translateX(-100%);
+}
+
 
 @keyframes spin {
   0% {
