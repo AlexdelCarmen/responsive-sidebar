@@ -34,13 +34,17 @@ body {
   font-weight: 300;
   letter-spacing: 5px;
   color: #191825;
+  margin-right: 2rem;
 }
 
 .fa-xmark {
   font-size: 24px;
   color: #e384ff;
-  cursor: pointer;
+}
+
+#xmark {
   display: none;
+  cursor: pointer;
 }
 
 #xmark:hover {
@@ -95,7 +99,6 @@ a {
 button {
   outline: none;
   border: none;
-
   background-color: transparent;
 }
 
@@ -109,13 +112,12 @@ button {
 }
 
 #hamburger:hover {
-    color: #191825;
+  color: #191825;
 }
 
 .hide {
-    transform: translateX(-100%);
+  transform: translateX(-100%);
 }
-
 
 @keyframes spin {
   0% {
@@ -140,25 +142,25 @@ button {
 }
 
 @keyframes beat {
-    0% {
-        transform: scale(100%);
-    }
+  0% {
+    transform: scale(100%);
+  }
 
-    25% {
-        transform: scale(105%);
-    }
+  25% {
+    transform: scale(105%);
+  }
 
-    50% {
-        transform: scale(110%);
-    }
+  50% {
+    transform: scale(110%);
+  }
 
-    75% {
-        transform: scale(105%);
-    }
+  75% {
+    transform: scale(105%);
+  }
 
-    100% {
-        transform: scale(100%);
-    }
+  100% {
+    transform: scale(100%);
+  }
 }
 
 @media screen and (min-width: 650px) {
@@ -170,8 +172,8 @@ button {
     background-color: white;
   }
 
-  .fa-xmark {
-    display: unset !important;
+  #xmark {
+    display: block;
   }
 
   .header {
